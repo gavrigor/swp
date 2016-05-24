@@ -1,7 +1,4 @@
-from django.shortcuts import render 
-from django.http import HttpResponse 
-
-
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404
 from django.core.paginator import Paginator
