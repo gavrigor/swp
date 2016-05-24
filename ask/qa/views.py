@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404
 from django.core.paginator import Paginator
-from django.contrib.auth import authenticate, login
+# from django.contrib.auth import authenticate, login
 
 from qa.models import Question, Answer
 from qa.forms import AskForm, AnswerForm, LoginForm, SignupForm
