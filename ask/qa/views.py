@@ -26,7 +26,7 @@ def question(request, num,):
 
     return render(request, 'question.html', {'question': q,
                                              'form': form,
-                                             'user': request.user,
+#                                             'user': request.user,
                                              'session': request.session, })
 
 
@@ -46,7 +46,7 @@ def index(request):
                    'paginator': paginator,
                    'questions': page.object_list,
                    'page': page,
-                   'user': request.user,
+#                   'user': request.user,
                    'session': request.session, })
 
 
@@ -66,7 +66,7 @@ def popular(request):
                    'paginator': paginator,
                    'questions': page.object_list,
                    'page': page,
-                   'user': request.user,
+ #                  'user': request.user,
                    'session': request.session, })
 
 
@@ -81,7 +81,7 @@ def ask(request):
     else:
         form = AskForm()
     return render(request, 'ask.html', {'form': form,
-                                        'user': request.user,
+  #                                      'user': request.user,
                                         'session': request.session, })
 
 
@@ -101,7 +101,7 @@ def login_view(request):
     else:
         form = LoginForm()
     return render(request, 'login.html', {'form': form,
-                                          'user': request.user,
+   #                                       'user': request.user,
                                           'session': request.session, })
 
 
