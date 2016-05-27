@@ -23,7 +23,6 @@ urlpatterns = [
     url(r'^login/', login_view),
     url(r'^signup/', signup),
     url(r'^ask/', ask),
-    # url(r'^answer/', answer),
     url(r'^popular/', popular),
     url(r'^new/', found),
     url(r'^admin/', admin.site.urls),
